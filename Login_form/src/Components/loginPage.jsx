@@ -2,72 +2,65 @@
 
 
 const LoginPage = () => {
-     return (
-    <div className="flex items-center  justify-center min-h-screen  ">
-      <div className="w-96 p-6 bg-gray-800 border-2 hover:border-x-red-800 hover:border-y-amber-400 transition-all duration-1000 rounded-3xl shadow-lg">
-        <h1 className="text-3xl font-bold text-center text-white mb-6">
-          Login Form
-        </h1>
+  return (
 
-        <form className="space-y-4 ">
+    <div className="flex items-center  justify-center min-h-screen  ">
+
+      <div className="w-96 p-6 border-2 bg-gray-800 rounded-3xl  ">
+
+
+        <h1 className="text-white mb-6 text-bold text-center font-bold text-3xl ">Login Form</h1>
+
+        <form className="space-y-4">
+
           <div>
-            <label className="block mb-1 font-medium text-white">
-              Username
-            </label>
+
+            <label htmlFor="" className="text-white text-lg ">Username</label>
             <input
               type="text"
-              placeholder="Enter username"
-              className="w-full px-3 py-2 border rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              required
+              placeholder="UserName"
+              className="w-full border-2 px-3 py-2  rounded-2xl hover:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none "
             />
           </div>
-
           <div>
-            <label className="block mb-1 font-medium text-white">
-              Email
-            </label>
+
+            <label htmlFor="" className="text-white text-lg ">Email</label>
             <input
               type="email"
-              placeholder="Enter email"
-              className="w-full px-3 py-2 border rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              required
+              placeholder="Email"
+              className="w-full border-2 px-3 py-2  rounded-2xl  hover:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
-
           <div>
-            <label className="block mb-1 text-white font-medium">
-              Password
-            </label>
+
+            <label htmlFor="" className="text-white text-lg ">Password</label>
             <input
               type="password"
-              placeholder="Enter password"
-              className="w-full px-3 py-2 border rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              required
+              placeholder="Password"
+              className="w-full border-2 px-3 py-2  rounded-2xl  hover:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
-          <div className="text-right">
-            <a
-              href="#"
-              className="text-blue-600 hover:underline"
-            >
-              Forgot Password?
-            </a>
+          <a href="# " className="text-blue-600 text-l">forget password</a>
+
+          <div className="flex justify-around mt-8">
+
+            <button className="bg-blue-700 text-xl  duration-300 hover:scale-110 transition-transform rounded-4xl  border hover:bg-blue-800 outline-none font-bold px-10 py-4 focus:ring-2 focus:ring-blue-400">Login</button>
+
+
+            <button  className="bg-green-700 text-xl rounded-4xl border hover:bg-green-900 transition-transform hover:scale-110 duration-300 font-bold px-10 py-4 focus:ring-2 focus:ring-green-400">SignUp</button>
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
-          >
-            Login
-          </button>
-
-          <button
-            type="button"
-            className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700"
-          >
-            Sign In
-          </button>
         </form>
+
       </div>
     </div>
+
+
+
   );
 
 }
